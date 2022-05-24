@@ -7,7 +7,7 @@ public static void main(String[] args) {
 	String temp = " ";
 	for(int i=0; i<split.length; i++) {
 		String revstr = " ";
-		if (i%2==1) { 
+		if ((i+1) %2 == 0) { 
 			char[] charArray = split[i].toCharArray();
 			for (int j= charArray.length - 1; j>=0; j--) {
 				revstr = revstr + charArray[j];
